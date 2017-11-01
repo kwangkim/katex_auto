@@ -8,7 +8,7 @@
  
  const splitWithDelimiters = function(text, delimiters) {
      let data = [{type: "text", data: text}];
-     for (let i = 0; i < delimiters.length; i++) {s
+     for (let i = 0; i < delimiters.length; i++) {
          const delimiter = delimiters[i];
          data = splitAtDelimiters(
              data, delimiter.left, delimiter.right,

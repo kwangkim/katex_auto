@@ -104,7 +104,6 @@ var splitAtDelimiters = function splitAtDelimiters(startData, leftDelim, rightDe
 var splitWithDelimiters = function splitWithDelimiters(text, delimiters) {
     var data = [{ type: "text", data: text }];
     for (var i = 0; i < delimiters.length; i++) {
-        s;
         var delimiter = delimiters[i];
         data = splitAtDelimiters(data, delimiter.left, delimiter.right, delimiter.display || false);
     }
